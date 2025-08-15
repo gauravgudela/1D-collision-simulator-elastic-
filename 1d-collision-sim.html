@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>1D Collision Simulator</title>
+    <link rel="stylesheet" href="collision.css">
+    <script src="collision.js" defer></script>
+</head>
+<body>
+
+<h1>1D Elastic Collision Simulator 👅</h1>
+
+<div class="controls">
+    <div>
+        <label>Mass 1 (kg): <input type="number" id="m1" value="2"></label>
+        <label>Velocity 1 (m/s): <input type="number" id="v1" value="2"></label>
+    </div>
+    <div>
+        <label>Mass 2 (kg): <input type="number" id="m2" value="2"></label>
+        <label>Velocity 2 (m/s): <input type="number" id="v2" value="-1"></label>
+    </div>
+    <button onclick="startSimulation()">Start Simulation</button>
+</div>
+<canvas id="simCanvas" width="800" height="200"></canvas>
+</body>
+</html>
